@@ -8,9 +8,8 @@ format criteria grade exactly that. Your course repo link is the whole submissio
 files and no evidence uploads are part of Assignment 5.
 
 **Contribution Number:** [1]
-**Student:** [Student name]
-**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no
-profile URL. Your comments upstream are identified by this name.]
+**Tech Fellow:** Matthew Wyatt
+**GitHub Username:** MatthewOscar
 **Issue:** [GitHub issue link]
 **Pull Request:** [GitHub PR link, once opened]
 
@@ -55,10 +54,20 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Grew issue-select into issue-scout and ran it on live GitHub (2026-10-09)**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I overlaid the staff skeleton on my Unit 1 skill and wrote a search strategy of three
+`gh search issues` queries, each traced to a sentence of my fit profile, ranked by a drop filter
+and a fewest-comments, newest-first ordering with one issue per repo. The wild broke it three
+ways: scan 1 graded nothing because the headless permission layer refused my jq ranking 14 times,
+scan 2 accepted a solo repo whose owner shows as CONTRIBUTOR and an event repo seeded with 60
+issues that morning, and my rubric's latency and policy rows named snapshot-bundle lines that do
+not exist live, so latency came back "unclear" on all five and policy rested on a keyword grep. I
+rewrote the ranking as two permission-safe steps, tightened the drop filter for owner-named orgs
+and event repos, and gave those two rubric rows live-mode evidence recipes without changing any
+pass condition. Scan 3 graded latency from real replies (2, 10 and 15 days on LettuceDetect), read
+policies in full and kept the backlog repos out, though two of its five slots still went to
+brand-new issues already claimed by an open PR.
 
 **Unit 6: [one line on the tool work]**
 
