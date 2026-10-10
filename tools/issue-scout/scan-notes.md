@@ -135,3 +135,13 @@ left the lines below open for next week's fresh scan.
   PRs to `main` or `develop` "must be authored by nimrodbusany" (contributor branches are handed
   off), plus a CLA, and nimrodbusany made 49 of the last 50 commits. Accepted as written; worth a
   question to the maintainer before claiming.
+
+## Regression (2026-10-09)
+
+Full Unit 1 harness run on the patched rubric (`python3 run_eval.py --rubric issue-scout/rubric.md
+--skill issue-scout/SKILL.md --save-run ...`, Sonnet pinned, rubric sha256 2db1a55340c444aa):
+19/20, PASS. That is identical to my Unit 1 run: the same category tallies (claimed 4/4,
+clear-accept 8/8, dead-repo 3/3, policy 1/1, scope 3/4) and the same single miss, issue-15, the
+arguable scope call I chose not to chase in Unit 1. issue-12, the policy reject whose ban sits on
+a linked docs page, still rejects, so P2's live-mode wording did not leak into eval mode. Run file:
+`eval-run-unit5.txt`.
